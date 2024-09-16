@@ -15,12 +15,25 @@ export const BasketProvider = ({ children }) => {
   }, [basket]);
 
   const addToBasket = (product, quantity) => {
-    console.log("Adding to basket:", product, "Quantity:", quantity);
     setBasket((prevBasket) => [...prevBasket, { ...product, quantity }]);
   };
 
+  const updateQuantity = (index, quantity) => {
+    setBasket((prevBasket) => {
+      const newBasket = [...prevBasket];
+      newBasket[index].quantity = quantity;
+      return newBasket;
+    });
+  };
+
+  const removeItem = (index) => {
+    setBasket((prevBasket) => prevBasket.filter((_, i) => i !== index));
+  };
+
   return (
-    <BasketContext.Provider value={{ basket, addToBasket }}>
+    <BasketContext.Provider
+      value={{ basket, addToBasket, updateQuantity, removeItem }}
+    >
       {children}
     </BasketContext.Provider>
   );

@@ -5,6 +5,7 @@ import styles from "./Delivery.module.css";
 
 function Delivery({ children }) {
   const [country, setCountry] = useState("");
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchCountry = async () => {
@@ -12,18 +13,27 @@ function Delivery({ children }) {
         const response = await axios.get("https://ipapi.co/json/");
         setCountry(response.data.country_name);
       } catch (error) {
-        console.error("Error fetching the country data:", error);
+        if (error.response && error.response.status === 429) {
+          console.error("Too many requests. Please try again later.");
+          setError("Too many requests. Please try again later.");
+        } else {
+          console.error("Error fetching the country data:", error);
+          setError("Error fetching the country data.");
+        }
       }
     };
 
     fetchCountry();
   }, []);
+
   return (
     <div className={styles.delivery}>
       <SlLocationPin className={styles.icon} />
       <div className={styles.text}>
         <span>Deliver to</span>
-        <span>{country ? <p>{country}</p> : <p>Loading...</p>}</span>
+        <span>
+          {country ? <p>{country}</p> : <p>{error || "Loading..."}</p>}
+        </span>
         {children}
       </div>
     </div>
