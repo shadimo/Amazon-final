@@ -1,0 +1,21 @@
+.bottomSection {
+  background-color: #232f3e;
+  color: white;
+  font-size: 20px;
+}
+
+.languageCurrency {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+}
+.languageCurrency span {
+  border: 1px solid white;
+}
+.languageCurrency span img {
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+}

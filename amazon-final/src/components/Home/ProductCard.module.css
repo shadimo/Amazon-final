@@ -1,0 +1,67 @@
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  text-align: center;
+
+  box-sizing: border-box;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.productImage {
+  width: 300px;
+  height: 300px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.productName {
+  font-size: 1.5em;
+  margin: 15px 0;
+}
+
+.priceSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.discountedPrice {
+  font-size: 1.2em;
+  color: #e74c3c;
+}
+
+.originalPrice {
+  font-size: 1em;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.description {
+  margin: 15px 0;
+  color: #555;
+}
+
+.reviews {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #777;
+}
+
+.moreLink {
+  display: block;
+  margin-top: 15px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.moreLink:hover {
+  text-decoration: underline;
+}

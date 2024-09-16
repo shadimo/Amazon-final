@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.accountMenu {
+  position: relative;
+  display: inline-block;
+}
+
+.menuToggle {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.menuToggle img {
+  margin-right: 5px;
+}
+
+.menuToggle h5 {
+  margin: 0 5px;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.menuContent {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 200px;
+  padding: 10px;
+  color: black;
+}
+
+.section {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section p {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.section a {
+  color: #0073bb;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.section a:hover {
+  text-decoration: underline;
+}
+
+.section li {
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.section li:hover {
+  background-color: #f1f1f1;
+}
+
+.menuContent img {
+  display: flex;
+  width: auto;
+  height: auto;
+}
+
+.menuContent p {
+  margin: 10px 0;
+  padding-right: 15px;
+}
+
+.menuContent a {
+  color: #0073bb;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.menuContent a:hover {
+  text-decoration: underline;
+}

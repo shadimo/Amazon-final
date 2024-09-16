@@ -1,0 +1,109 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Fenty Beauty Foundation",
+      "price": 35,
+      "oldPrice": 45,
+      "imageURL": "assets/fenty.jpg",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident a aperiam quo unde aspernatur culpa nobis eaque sit...",
+      "rating": "3.5",
+      "Ingredients": "Water, Dimethicone, Trimethylsiloxysilicate, PEG-10 Dimethicone, Polyglyceryl-4 Isostearate, Hexyl Laurate, Glycerin, Disteardimonium Hectorite, Sodium Chloride, Phenoxyethanol, Caprylyl Glycol, Ethylhexylglycerin, Triethoxycaprylylsilane, Aluminum Hydroxide, Stearic Acid, Isostearic Acid, etc.",
+      "Origin": "USA",
+      "Manufacturer": "Fenty Beauty by Rihanna",
+      "Usage": "Apply a pearl-sized amount to the face, morning and night.",
+      "shipping": {
+        "weight": "0.5kg",
+        "dimensions": "10x5x5cm",
+        "origin": "USA",
+        "destination": "Germany",
+        "carrier": "DHL",
+        "trackingNumber": "1234567890"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Tatcha Water Cream",
+      "price": 69,
+      "oldPrice": 75,
+      "imageURL": "assets/TATCHA.avif",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident a aperiam quo unde aspernatur culpa nobis eaque sit...",
+      "rating": "4",
+      "Ingredients": "Water, Glycerin, Dimethicone, Butylene Glycol, Squalane, Camellia Japonica Seed Oil, Algae Extract, Sodium Hyaluronate, Rice Ferment Filtrate (Sake), Green Tea Leaf Extract, Licorice Root Extract, etc.",
+      "Origin": "Japan",
+      "Manufacturer": "Tatcha LLC",
+      "Usage": "Apply a pearl-sized amount to the face, morning and night.",
+      "shipping": {
+        "weight": "0.3kg",
+        "dimensions": "8x8x8cm",
+        "origin": "Japan",
+        "destination": "Germany",
+        "carrier": "FedEx",
+        "trackingNumber": "0987654321"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Glossier Boy Brow",
+      "price": 16,
+      "oldPrice": 20,
+      "imageURL": "assets/glossier.avif",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident a aperiam quo unde aspernatur culpa nobis eaque sit...",
+      "rating": "3.5",
+      "Ingredients": "Water, Beeswax, Copernicia Cerifera (Carnauba) Wax, Oleic Acid, Lecithin, Alcohol, Ethylhexylglycerin, Phenoxyethanol, Iron Oxides (CI 77491, CI 77492, CI 77499), Titanium Dioxide (CI 77891), etc.",
+      "Origin": "USA",
+      "Manufacturer": "Glossier Inc",
+      "Usage": "Brush through brows to groom, shape, and fill.",
+      "shipping": {
+        "weight": "0.1kg",
+        "dimensions": "5x5x5cm",
+        "origin": "USA",
+        "destination": "Germany",
+        "carrier": "UPS",
+        "trackingNumber": "1122334455"
+      }
+    },
+    {
+      "id": 4,
+      "name": "The Ordinary Niacinamide Serum",
+      "price": 6,
+      "oldPrice": 10,
+      "imageURL": "assets/TheOrdinary.webp",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident a aperiam quo unde aspernatur culpa nobis eaque sit...",
+      "rating": "4.5",
+      "Ingredients": "Aqua (Water), Niacinamide, Pentylene Glycol, Zinc PCA, Tamarindus Indica Seed Gum, Xanthan Gum, Isoceteth-20, Ethoxydiglycol, Phenoxyethanol, Chlorphenesin, etc.",
+      "Origin": "Canada",
+      "Manufacturer": "DECIEM Inc.",
+      "Usage": "Apply to the entire face morning and evening before heavier creams.",
+      "shipping": {
+        "weight": "0.2kg",
+        "dimensions": "6x6x6cm",
+        "origin": "Canada",
+        "destination": "Germany",
+        "carrier": "Canada Post",
+        "trackingNumber": "6677889900"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Real Techniques 11 Piece Travel Fantasy Mini Brush Set",
+      "price": 26,
+      "oldPrice": 34,
+      "imageURL": "assets/Real.webp",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident a aperiam quo unde aspernatur culpa nobis eaque sit...",
+      "rating": "3",
+      "Ingredients": "Synthetic bristles, Aluminum ferrules, Plastic handles.",
+      "Origin": "China",
+      "Manufacturer": "Paris Presents Inc.",
+      "Usage": "Use the brushes for applying makeup on the go.",
+      "shipping": {
+        "weight": "0.4kg",
+        "dimensions": "12x6x6cm",
+        "origin": "China",
+        "destination": "Germany",
+        "carrier": "China Post",
+        "trackingNumber": "5566778899"
+      }
+    }
+  ]
+}

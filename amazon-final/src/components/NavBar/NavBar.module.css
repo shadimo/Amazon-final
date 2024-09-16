@@ -1,0 +1,25 @@
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  color: white;
+  list-style: none;
+  text-align: center;
+  gap: 20px;
+}
+.navbar li a {
+  color: white;
+  text-decoration: none;
+}
+.navbar li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchInput {
+  margin-left: auto;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}

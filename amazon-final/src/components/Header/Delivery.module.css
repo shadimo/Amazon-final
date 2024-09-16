@@ -1,0 +1,29 @@
+/* Delivery.module.css */
+.delivery {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.text span {
+  font-size: 14px;
+}
+
+.text p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}

@@ -1,0 +1,26 @@
+.cartIcon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.cartIcon img {
+  width: 60px;
+  height: 60px;
+}
+
+.cartIcon .badge {
+  position: absolute;
+  top: 0;
+  right: 53px;
+  color: #ff9900;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
