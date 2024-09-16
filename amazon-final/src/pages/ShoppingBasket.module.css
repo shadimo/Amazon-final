@@ -1,27 +1,3 @@
-/* .carts {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  border: 1px solid gray;
-  margin: 20px;
-}
-
-.carts img {
-  width: 200px;
-  height: 200px;
-}
-
-span {
-  margin: 10px;
-  font-size: 16px;
-  display: block;
-}
-.carts label {
-  padding: 5px;
-  margin: 5px;
-} */
-/* ShoppingBasket.module.css */
-/* ShoppingBasket.module.css */
 .carts {
   display: flex;
   align-items: center;
@@ -30,15 +6,17 @@ span {
   border: 1px solid #ddd;
   border-radius: 5px;
 }
+.container {
+  display: flex;
+  margin: 40px;
+  padding: 10px;
+  gap: 70px;
+}
 
 .carts img {
   width: 100px;
   height: 100px;
   margin-right: 20px;
-}
-
-.carts div {
-  flex: 1;
 }
 
 .carts span {
@@ -63,4 +41,22 @@ span {
   border: none;
   background-color: #007bff;
   color: white;
+}
+.summary {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.summary p {
+  margin: 20px;
+}
+.summary button {
+  margin: 20px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: rgb(253, 188, 66);
+  border: 1px solid #ddd;
 }

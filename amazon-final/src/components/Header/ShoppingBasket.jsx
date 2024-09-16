@@ -5,7 +5,7 @@ import { useBasket } from "../BasketContext";
 
 const ShoppingBasket = () => {
   const navigate = useNavigate();
-  const { basket } = useBasket();
+  const { totalQuantity } = useBasket();
 
   const handleLogoClick = () => {
     navigate("/basket");
@@ -13,7 +13,7 @@ const ShoppingBasket = () => {
   return (
     <div className={styles.carts}>
       <a href="#" className={styles.cartIcon} onClick={handleLogoClick}>
-        <span className={styles.badge}>{basket.quantity}</span>
+        <span className={styles.badge}>{totalQuantity}</span>
         <img src={basketImage} alt="basket" />
         <p>Cart</p>
       </a>

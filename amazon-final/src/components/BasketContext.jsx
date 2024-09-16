@@ -30,9 +30,11 @@ export const BasketProvider = ({ children }) => {
     setBasket((prevBasket) => prevBasket.filter((_, i) => i !== index));
   };
 
+  const totalQuantity = basket.reduce((acc, item) => acc + item.quantity, 0);
+
   return (
     <BasketContext.Provider
-      value={{ basket, addToBasket, updateQuantity, removeItem }}
+      value={{ basket, addToBasket, updateQuantity, removeItem, totalQuantity }}
     >
       {children}
     </BasketContext.Provider>

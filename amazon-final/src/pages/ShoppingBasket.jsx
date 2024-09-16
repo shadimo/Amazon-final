@@ -41,13 +41,15 @@ const ShoppingBasket = () => {
         .map((item) => item.quantity * item.price)
     );
   };
+  const totalQuantity = quantities.reduce((acc, quantity) => acc + quantity, 0);
+  const totalPrice = costs.reduce((acc, cost) => acc + cost, 0);
 
   return (
     <div>
       <Header />
       <NavBar />
-      <div>
-        <h2>Shopping Basket</h2>
+      <h2>Shopping Basket</h2>
+      <div className={styles.container}>
         {basket.length === 0 ? (
           <p>Your basket is empty</p>
         ) : (
@@ -99,6 +101,16 @@ const ShoppingBasket = () => {
             ))}
           </ul>
         )}
+        <div className={styles.summary}>
+          <p>Total Quantity: {totalQuantity}</p>
+          <p>Total Price: ${totalPrice.toFixed(2)}</p>
+          <label>
+            <input type="checkbox" />
+            This will be a gift
+            <a href="#"> learn more</a>
+          </label>
+          <button>Proceed to Checkout</button>
+        </div>
       </div>
       <Footer />
     </div>

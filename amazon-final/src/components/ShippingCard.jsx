@@ -19,7 +19,6 @@ const ShippingCard = ({ product, selectedProduct }) => {
   };
   const handleAddToBasket = () => {
     if (selectedProduct) {
-      console.log("Product to add:", selectedProduct, "Quantity:", quantity); // Debug log
       addToBasket(selectedProduct, quantity);
     }
   };
